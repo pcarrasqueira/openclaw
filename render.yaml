@@ -7,6 +7,10 @@ services:
     envVars:
       - key: PORT
         value: "8080"
+      - key: OPENCLAW_BIND
+        value: "0.0.0.0"  # Add this to bind to all interfaces
+      - key: OPENCLAW_PORT
+        value: "8080"  # Add this to specify the port
       - key: SETUP_PASSWORD
         sync: false
       - key: OPENCLAW_STATE_DIR
